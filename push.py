@@ -39,7 +39,7 @@ if True:
         os.system("git add .")
         commit = input("Enter commit message: ")
         os.system(f"git commit -m \"{commit}\"")
-        lognamefile = "/logs/pushlogs/log.txt"
+        lognamefile = "logs/pushlogs/log.txt"
         check_txtlog = Path(f"{lognamefile}")
         if check_txtlog.is_file():
             with open(lognamefile,"a") as file:
